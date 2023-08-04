@@ -65,8 +65,16 @@ The first part of the numerical data shows how many females and males were alive
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+```
 
+```{r}
+fisher.test(table1)
+```
 
+In this fisher test we will separately compute the odds ratio. The odds of a female dying is 25/1831 and the odds of a man dying is 44/1411. So, the odds ratio is (44/1411)/(25/1831) which equals to 2.3. So, we reject the null hypothesis because we have a significant results. There is a probability of 1 in 1000 times to ever have something like this happen.
 
 ## Conclusions
 
