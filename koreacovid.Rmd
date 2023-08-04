@@ -55,6 +55,13 @@ In this percent chart we see that the two bars labeled "alive" are not the same 
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The first part of the numerical data shows how many females and males were alive which was 56% and 44% respectively. It also shows how many females and males were dead which was 36% and 64% respectively. This portion represents the rows of the chart shown previously. In the second part of this data it shows the result of what percent of the female population were dead which was 1.4% and the result of what percent of the male population was dead which was 3%. This demonstrates that the population of dead males was more than twice bigger than the population of the dead females. 
 
 ## Inferential results 
 
