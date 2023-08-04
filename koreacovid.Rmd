@@ -27,21 +27,31 @@ state of a patient must be died or alive - we adjust that as well
   
 # Your Question - Is dying independent of sex?
 
+Table of patients:
+```{r}
 
+# cross tabulation, patient state by gender
 
+with(kRdata, table(Sex, result))
+
+```
 
 
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+barchartGC(~result + sex,data=kRdata)
+```
 
+In this data there are more women than men alive. They outnumber the males significantly as shown by the blue bar in the frequency chart above. The chart also shows that in this group people there are more people alive than dead as shown by the two bars labeled alive on the left and the two bars labeled dead on the right.
 
-  
+```{r}
+barchartGC(~result + sex,data=kRdata, type="percent")
 
+``` 
 
-
-
-
+In this percent chart we see that the two bars labeled "alive" are not the same as the two bars labeled "dead". The two bars to the left show that there are more women alive than man whereas the bars to the right show that there are more men dead than women. The percent of men dead is close to 63 percent and the percent of women dead is around 37 percent. Representing that there is a significant difference between the "alive" bars and "dead" bars. Meaning that an unexpected situation occurred because if everything were normal both alive and dead bars would be similar.
   
 ## Numerical results
 
