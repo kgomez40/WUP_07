@@ -78,3 +78,4 @@ In this fisher test we will separately compute the odds ratio. The odds of a fem
 
 ## Conclusions
 
+For the first part of this problem we first had to upload our categorical and categorical helper file because the data presented had two factor variables. Then we ran the frequency plot and the percent plot showing us the difference between the female and male population that are alive versus the female and male population that are dead. Then we ran the numerical results which showed us the exact percentage of dead females and the exact percentage of dead males. Which was 1.4% for females and 3% for males. Demonstrating that the population of dead males was more than twice higher than the percent of dead females. Then we ran the inferential test which showed us the chi square test and the fisher test, demonstrating that there is a probability of 1 in 1000 that this situation would ever occur. 
